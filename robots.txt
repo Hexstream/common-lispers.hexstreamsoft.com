@@ -1,0 +1,4 @@
+Sitemap: https://common-lispers.hexstreamsoft.com/sitemap.xml
+
+User-agent: *
+Disallow: /special/

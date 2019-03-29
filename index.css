@@ -1,0 +1,290 @@
+#top-nav > .main > .tabs ul > li {
+    border-top: none;
+    border-bottom: none;
+}
+
+
+#search-wrapper {
+    display: flex;
+    position: relative;
+    margin: var(--top-nav-margin);
+}
+
+#search-wrapper #search {
+    padding-left: var(--breadcrumbs-link-horizontal-padding);
+}
+
+#search-wrapper .summary {
+    position: absolute;
+    top: 100%;
+    font-size: smaller;
+    padding-left: 0.25rem;
+}
+
+#page-header .description {
+    line-height: 1.4em;
+}
+
+#no-affiliation-or-endorsement {
+    text-align: center;
+    border-top: dashed medium #DDDDDD;
+}
+
+#no-affiliation-or-endorsement p {
+    font-style: italic;
+}
+
+#no-affiliation-or-endorsement a {
+    text-decoration: none;
+}
+
+#no-affiliation-or-endorsement a:hover {
+    text-decoration: underline;
+}
+
+.cards {
+    margin-top: -2em;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.cards .card {
+    box-sizing: border-box;
+    flex: 0 1 22em;
+    padding-bottom: 0.4em;
+    margin-top: 4em;
+}
+
+@media (max-width: 27em) {
+    .cards .card {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.cards .card h1 {
+    margin-bottom: 0;
+}
+
+.cards .card .nickname {
+    font-size: larger;
+    opacity: 1;
+}
+
+.cards .card a {
+    text-decoration: none;
+}
+
+.cards .card .full-name a,
+.cards .card .nickname a {
+    color: black;
+}
+
+.cards .card a:hover, .cards .card a:focus {
+    text-decoration: underline;
+}
+
+.cards .card .tags {
+    justify-content: flex-start;
+    margin-top: 0;
+}
+
+.cards .card .tags.contains-groups {
+    flex-flow: row wrap;
+}
+
+.cards .card .tags .tag {
+    opacity: 1;
+}
+
+.cards .card .tags .tag.social,
+.cards .card .tags .tag.highlights {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+}
+
+.cards .card .tags .tag.social .h,
+.cards .card .tags .tag.highlights .h {
+    flex: none;
+    width: 1em;
+    margin-right: 0.15em;
+    text-indent: -10000px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.cards .card .tags .tag.social[data-social-kind="twitter"] .h {
+    background-image: url("https://non-free.hexstream.xyz/global.hexstreamsoft.com/images/logos/twitter.svg");
+}
+
+.cards .card .tags .tag.social[data-social-kind="mastodon"] .h {
+    background-image: url("https://non-free.hexstream.xyz/global.hexstreamsoft.com/images/logos/mastodon.svg");
+    width: 0.8em;
+}
+
+.cards .card .tags .tag.social[data-social-kind="github"] .h {
+    background-image: url("https://non-free.hexstream.xyz/global.hexstreamsoft.com/images/logos/github.svg");
+}
+
+.cards .card .tags .tag.social[data-social-kind="gitlab"] .h {
+    background-image: url("https://non-free.hexstream.xyz/global.hexstreamsoft.com/images/logos/gitlab.svg");
+}
+
+.cards .card .tags .tag.social[data-social-kind="bitbucket"] .h {
+    background-image: url("https://non-free.hexstream.xyz/global.hexstreamsoft.com/images/logos/bitbucket.svg");
+}
+
+.cards .card .tags .tag.social[data-social-kind="patreon"] .h {
+    background-image: url("https://workshop.hexstream.xyz/svg/remakes/patreon.svg");
+}
+
+.cards .card .tags .tag.social[data-social-kind="youtube"] .h {
+    background-image: url("https://non-free.hexstream.xyz/global.hexstreamsoft.com/images/logos/youtube.svg");
+}
+
+.cards .card .tags .tag.social[data-social-kind="reddit"] .h {
+    background-image: url("https://non-free.hexstream.xyz/global.hexstreamsoft.com/images/logos/reddit.svg");
+}
+
+.cards .card .tags .tag.highlights .h {
+    background-image: url("https://non-free.hexstream.xyz/global.hexstreamsoft.com/images/lightning-bolt_shaded.svg");
+    margin-left: -0.1em;
+    margin-right: 0;
+}
+
+.cards .card .tags .tag.social[data-social-kind="keybase"] .h {
+    background-image: url("https://non-free.hexstream.xyz/global.hexstreamsoft.com/images/logos/keybase.svg");
+}
+
+.cards .card .tags .tag.hv.highlights > .v {
+    white-space: initial;
+}
+
+.cards .card .tags .tag.hv.highlights > .v > a,
+.cards .card .tags .tag.hv.highlights > .v > span {
+    white-space: nowrap;
+}
+
+.cards .card .tags .tag.secondary {
+    opacity: 0.5;
+}
+
+.cards .card .tags .tag.secondary:hover {
+    opacity: 1;
+}
+
+.cards .card .tags.addenda {
+    position: absolute;
+    top: 100%;
+    margin-top: 0.2em;
+    opacity: 0.5;
+}
+
+.cards .card .tags.addenda .tag {
+    font-size: smaller;
+}
+
+.cards .card .tags.addenda:hover,
+.cards .card .tags.addenda:focus {
+    opacity: 1;
+}
+
+
+.cards .card .options {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    margin-bottom: 0.5em;
+    width: 3em;
+    opacity: 0.5;
+}
+
+.cards .card:target .options,
+.cards .card .nickname:target ~ .options {
+    display: block;
+}
+
+.cards .card .options:hover {
+    opacity: initial;
+}
+
+.cards .card .options > option:first-child {
+    display: none;
+}
+
+.cards .card.blocked {
+    display: none;
+}
+
+.cards .card.blocked:target {
+    display: block;
+}
+
+.cards .card.blocked .full-name a {
+    color: red;
+}
+
+.cards .card .options option[value="unblock"] {
+    display: none;
+}
+
+.cards .card.blocked .options option[value="unblock"] {
+    display: block;
+}
+
+.cards .card.blocked .options option[value="block"] {
+    display: none;
+}
+
+
+
+.cards :target .full-name a,
+.cards :target .nickname,
+.cards .nickname:target {
+    color: green;
+}
+
+.cards .card .nickname a {
+    color: inherit;
+}
+
+
+.cards .card .matches {
+    color: green;
+}
+
+.cards .card .matches a {
+    color: inherit;
+}
+
+.cards .card .highlights .matches a {
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 20.625em) {
+     .unless-miser {
+         display: none;
+     }
+
+     .unless-miser[data-alt] {
+         display: inline;
+     }
+
+     .unless-miser[data-alt] > span {
+         display: none;
+     }
+
+     .unless-miser[data-alt]:after {
+         content: attr(data-alt);
+     }
+}
+
+
+.long {
+    white-space: initial !important;
+}

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="canonical" href="https://common-lispers.hexstreamsoft.com/preferences/" />
+    <meta name="author" content="Jean-Philippe Paradis" />
+    <link rel="author" href="https://abc.hexstream.xyz/" />
+    <link rel="license" href="https://common-lispers.hexstreamsoft.com/UNLICENSE" />
+    <meta name="description" content="Preferences for the Common Lispers list." />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Preferences | Common Lispers</title>
+    <link href="../css/global.css" rel="stylesheet" type="text/css" />
+    <link href="https://global.hexstreamsoft.com/css/forms.css" rel="stylesheet" type="text/css" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <script src="https://global.hexstreamsoft.com/scripts/global.js"></script>
+    <script src="../scripts/global.js"></script>
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+
+    <nav id="top-nav">
+
+      <div class="main">
+
+        <div class="breadcrumbs">
+          <a href="https://www.hexstreamsoft.com/">HexstreamSoft</a>
+          <span class="crumb"><span class="s"> » </span><a href="../">Common Lispers</a></span>
+          <span class="crumb"><span class="s"> » </span><a class="here">Preferences</a></span>
+        </div>
+
+      </div>
+
+      <p id="last-updated"><span>This page was last updated on </span><time datetime="2019-03-29">29 march 2019</time><span>.</span></p>
+
+    </nav>
+
+    <main data-state-domain="site-prefs">
+
+      <header id="page-header">
+        <h1>Preferences</h1>
+        <p class="description">For a more personalized experience.</p>
+      </header>
+
+      <div class="notice error" id="js-required">
+        <b>✘</b>
+        <div>
+          <p>Please activate javascript, which the preferences system requires.</p>
+        </div>
+      </div>
+
+      <nav class="tabs">
+        <ul>
+          <li><a href="#sort-order">Sort order</a></li>
+          <li><a href="#fields">Fields</a></li>
+          <li><a href="#block">Block</a></li>
+        </ul>
+      </nav>
+
+      <section id="sort-order">
+
+        <h1 class="breadcrumbs-bar">
+          <span class="section-relative-nav">
+            <a href="#sort-order" class="anchor">⚓</a>
+          </span>
+          <span class="breadcrumbs">
+            <a class="here">Sort order</a>
+          </span>
+        </h1>
+
+        <p>By default, the sort order is randomized, for fairness.</p>
+
+        <div class="controls-group horizontal">
+          <span>Sort order:</span>
+          <div class="labelled-control">
+            <input type="radio" class="replaced" id="sort-order_random" name="sort-order" disabled="disabled" checked="checked"
+                   data-state-key="sort-order" data-state-value="random" />
+            <label for="sort-order_random">&nbsp;</label>
+            <label for="sort-order_random">Random</label>
+          </div>
+          <div class="labelled-control">
+            <input type="radio" class="replaced" id="sort-order_alphabetical" name="sort-order" disabled="disabled" checked="checked"
+                   data-state-key="sort-order" data-state-value="alphabetical" />
+            <label for="sort-order_alphabetical">&nbsp;</label>
+            <label for="sort-order_alphabetical">Alphabetical</label>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="fields">
+
+        <h1 class="breadcrumbs-bar">
+          <span class="section-relative-nav">
+            <a href="#fields" class="anchor">⚓</a>
+          </span>
+          <span class="breadcrumbs">
+            <a class="here">Fields</a>
+          </span>
+        </h1>
+
+        <ul>
+          <li>
+            <div class="controls-group horizontal">
+              <div class="labelled-control">
+                <input id="fullname-visibility-option" type="checkbox" class="replaced" disabled="disabled" checked="checked"
+                       data-state-key="fullname.visibility" data-state-value="show" data-state-antivalue="hide"/>
+                <label for="fullname-visibility-option">&nbsp;</label>
+                <label for="fullname-visibility-option">Full name</label>
+              </div>
+              <div class="labelled-control">
+                <input id="nickname-visibility-option" type="checkbox" class="replaced" disabled="disabled" checked="checked"
+                       data-state-key="nickname.visibility" data-state-value="show" data-state-antivalue="hide"/>
+                <label for="nickname-visibility-option">&nbsp;</label>
+                <label for="nickname-visibility-option">Nickname</label>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="controls-group horizontal">
+              <div class="labelled-control">
+                <input id="website-visibility-option" type="checkbox" class="replaced" disabled="disabled" checked="checked"
+                       data-state-key="website.visibility" data-state-value="show" data-state-antivalue="hide"/>
+                <label for="website-visibility-option">&nbsp;</label>
+                <label for="website-visibility-option">Website</label>
+              </div>
+              <div class="labelled-control">
+                <input id="blog-visibility-option" type="checkbox" class="replaced" disabled="disabled" checked="checked"
+                       data-state-key="blog.visibility" data-state-value="show" data-state-antivalue="hide"/>
+                <label for="blog-visibility-option">&nbsp;</label>
+                <label for="blog-visibility-option">Blog</label>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="labelled-control">
+              <input id="accounts-visibility-option" type="checkbox" class="replaced" disabled="disabled" checked="checked"
+                     data-state-key="accounts.visibility" data-state-value="show" data-state-antivalue="hide"/>
+              <label for="accounts-visibility-option">&nbsp;</label>
+              <label for="accounts-visibility-option">Accounts:</label>
+            </div>
+            <ul>
+              <li>
+                <div class="labelled-control">
+                  <input id="coding-accounts-visibility-option" type="checkbox" class="replaced" disabled="disabled" checked="checked"
+                         data-state-key="/accounts/coding.visibility" data-state-value="show" data-state-antivalue="hide"/>
+                  <label for="coding-accounts-visibility-option">&nbsp;</label>
+                  <label for="coding-accounts-visibility-option">Coding:</label>
+                </div>
+                <ul>
+                  <li>
+                    <div class="labelled-control">
+                      <input id="github-coding-accounts-visibility-option" type="checkbox" class="replaced" disabled="disabled" checked="checked"
+                             data-state-key="/accounts/coding/github.visibility" data-state-value="show" data-state-antivalue="hide"/>
+                      <label for="github-coding-accounts-visibility-option">&nbsp;</label>
+                      <label for="github-coding-accounts-visibility-option">GitHub</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="labelled-control">
+                      <input id="gitlab-coding-accounts-visibility-option" type="checkbox" class="replaced" disabled="disabled" checked="checked"
+                             data-state-key="/accounts/coding/gitlab.visibility" data-state-value="show" data-state-antivalue="hide"/>
+                      <label for="gitlab-coding-accounts-visibility-option">&nbsp;</label>
+                      <label for="gitlab-coding-accounts-visibility-option">GitLab</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="labelled-control">
+                      <input id="bitbucket-coding-accounts-visibility-option" type="checkbox" class="replaced" disabled="disabled" checked="checked"
+                             data-state-key="/accounts/coding/bitbucket.visibility" data-state-value="show" data-state-antivalue="hide"/>
+                      <label for="bitbucket-coding-accounts-visibility-option">&nbsp;</label>
+                      <label for="bitbucket-coding-accounts-visibility-option">Bitbucket</label>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="labelled-control">
+                  <input id="microblogging-accounts-visibility-option" type="checkbox" class="replaced" disabled="disabled" checked="checked"
+                         data-state-key="/accounts/microblogging.visibility" data-state-value="show" data-state-antivalue="hide"/>
+                  <label for="microblogging-accounts-visibility-option">&nbsp;</label>
+                  <label for="microblogging-accounts-visibility-option">Microblogging:</label>
+                </div>
+                <ul>
+                  <li>
+                    <div class="labelled-control">
+                      <input id="twitter-microblogging-accounts-visibility-option" type="checkbox" class="replaced" disabled="disabled" checked="checked"
+                             data-state-key="/accounts/microblogging/twitter.visibility" data-state-value="show" data-state-antivalue="hide"/>
+                      <label for="twitter-microblogging-accounts-visibility-option">&nbsp;</label>
+                      <label for="twitter-microblogging-accounts-visibility-option">Twitter</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="labelled-control">
+                      <input id="mastodon-microblogging-accounts-visibility-option" type="checkbox" class="replaced" disabled="disabled" checked="checked"
+                             data-state-key="/accounts/microblogging/mastodon.visibility" data-state-value="show" data-state-antivalue="hide"/>
+                      <label for="mastodon-microblogging-accounts-visibility-option">&nbsp;</label>
+                      <label for="mastodon-microblogging-accounts-visibility-option">Mastodon</label>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="labelled-control">
+                  <input id="funding-accounts-visibility-option" type="checkbox" class="replaced" disabled="disabled" checked="checked"
+                         data-state-key="/accounts/funding.visibility" data-state-value="show" data-state-antivalue="hide"/>
+                  <label for="funding-accounts-visibility-option">&nbsp;</label>
+                  <label for="funding-accounts-visibility-option">Funding:</label>
+                </div>
+                <ul>
+                  <li>
+                    <div class="labelled-control">
+                      <input id="patreon-funding-accounts-visibility-option" type="checkbox" class="replaced" disabled="disabled" checked="checked"
+                             data-state-key="/accounts/funding/patreon.visibility" data-state-value="show" data-state-antivalue="hide"/>
+                      <label for="patreon-funding-accounts-visibility-option">&nbsp;</label>
+                      <label for="patreon-funding-accounts-visibility-option">Patreon</label>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <div class="labelled-control">
+                  <input id="keybase-accounts-visibility-option" type="checkbox" class="replaced" disabled="disabled" checked="checked"
+                         data-state-key="/accounts/keybase.visibility" data-state-value="show" data-state-antivalue="hide"/>
+                  <label for="keybase-accounts-visibility-option">&nbsp;</label>
+                  <label for="keybase-accounts-visibility-option">Keybase</label>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="labelled-control">
+              <input id="highlights-visibility-option" type="checkbox" class="replaced" disabled="disabled" checked="checked"
+                     data-state-key="highlights.visibility" data-state-value="show" data-state-antivalue="hide"/>
+              <label for="highlights-visibility-option">&nbsp;</label>
+              <label for="highlights-visibility-option">Highlights</label>
+            </div>
+          </li>
+          <li>
+            <div class="labelled-control">
+              <input id="portal-visibility-option" type="checkbox" class="replaced" disabled="disabled" checked="checked"
+                     data-state-key="portal.visibility" data-state-value="show" data-state-antivalue="hide"/>
+              <label for="portal-visibility-option">&nbsp;</label>
+              <label for="portal-visibility-option">Portal</label>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="block">
+
+        <h1 class="breadcrumbs-bar">
+          <span class="section-relative-nav">
+            <a href="#block" class="anchor">⚓</a>
+          </span>
+          <span class="breadcrumbs">
+            <a class="here">Block</a>
+          </span>
+        </h1>
+
+        <div class="labelled-control">
+          <input id="blocklist-status-option" type="checkbox" class="replaced" disabled="disabled" checked="checked"
+                 data-state-key="blocklist.status" data-state-value="enabled" data-state-antivalue="disabled">
+          <label for="blocklist-status-option">&nbsp;</label>
+          <label for="blocklist-status-option">Enable blocklist</label>
+        </div>
+
+        <p class="summary">
+          You are currently blocking <a href="#blocklist">nobody</a>.
+        </p>
+
+        <p id="blocklist"><span class="empty">You aren't blocking anyone, so this list is empty.</span></p>
+
+        <p>To block someone, click on their full name, then select the <code>Block</code> option from the <code>⚙</code> menu.</p>
+
+        <div class="labelled-control">
+          <input id="blocked-visibility-option" type="checkbox" class="replaced" disabled="disabled"
+                 data-state-key="/blocklist/blocked.visibility" data-state-value="show" data-state-antivalue="hide">
+          <label for="blocked-visibility-option">&nbsp;</label>
+          <label for="blocked-visibility-option">Show blocked people in main list</label>
+        </div>
+
+        <p><small>(Your blocklist data and metadata will never be communicated to any server without your explicit consent.)</small></p>
+
+      </section>
+
+    </main>
+
+    <footer id="footer">
+      <div class="back-to-top left">
+        <a href="#">⬆</a>
+      </div>
+      <div class="main">
+        <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fcommon-lispers.hexstreamsoft.com%2Fpreferences%2F">✔ HTML5</a>
+        <a href="https://common-lispers.hexstreamsoft.com/README">✔ Public Domain</a>
+        <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fcommon-lispers.hexstreamsoft.com%2Fpreferences%2F">✔ CSS3</a>
+        <a>✔ Mobile-friendly</a>
+      </div>
+      <div class="back-to-top right">
+        <a href="#">⬆</a>
+      </div>
+    </footer>
+
+  </body>
+</html>

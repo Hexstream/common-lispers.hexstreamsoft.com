@@ -1,0 +1,12 @@
+.notice.note + section {
+    margin-top: 1.5em;
+}
+
+#footnotes #footnote_diseased-persons mark {
+    background: initial;
+    font-style: italic;
+}
+
+#structure-of-an-entry > ol > li + li {
+    margin-top: 0;
+}
