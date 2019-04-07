@@ -2,6 +2,56 @@
     margin-top: 1.5em;
 }
 
+#tenets > .tabs {
+    justify-content: center;
+}
+
+#tenets > .tabs ul li,
+#tenets > .tabs ul {
+    flex: 0 1 auto;
+}
+
+@media (max-width: 39.25em) {
+    #tenets > .tabs {
+        justify-content: stretch;
+    }
+
+    #tenets > .tabs ul li,
+    #tenets > .tabs ul {
+        flex: 1 1 auto;
+    }
+}
+
+#tenets .note {
+    text-align: center;
+}
+
+.cards.tenets {
+    align-items: flex-start;
+    margin-left: -1em;
+}
+
+.cards.tenets .card {
+    margin-top: 1em;
+}
+
+.cards.tenets .card h1 a {
+    color: inherit;
+}
+
+.cards.tenets .card h1 a:hover,
+.cards.tenets .card h1 a:focus {
+    text-decoration: underline;
+}
+
+.cards.tenets .card:target h1 {
+    color: green;
+}
+
+a.tenet {
+    color: green;
+}
+
 #footnotes #footnote_deceased-persons mark {
     background: initial;
     font-style: italic;
@@ -9,4 +59,17 @@
 
 #structure-of-an-entry > ol > li + li {
     margin-top: 0;
+}
+
+
+/* Source: https://css-tricks.com/snippets/css/prevent-superscripts-and-subscripts-from-affecting-line-height/ */
+
+sup, sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+
+sub {
+    top: 0.4em;
 }
