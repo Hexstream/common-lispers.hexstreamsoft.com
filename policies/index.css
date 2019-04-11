@@ -60,16 +60,3 @@ a.tenet {
 #structure-of-an-entry > ol > li + li {
     margin-top: 0;
 }
-
-
-/* Source: https://css-tricks.com/snippets/css/prevent-superscripts-and-subscripts-from-affecting-line-height/ */
-
-sup, sub {
-    vertical-align: baseline;
-    position: relative;
-    top: -0.4em;
-}
-
-sub {
-    top: 0.4em;
-}
