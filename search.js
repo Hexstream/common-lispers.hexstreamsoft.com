@@ -49,6 +49,7 @@ class Search {
                 fields: fields,
                 node: person
             };
+            // TODO: Generalize and also handle Michał Psota.
             if (id === "Michał_Herda")
                 record.fields.find(field => field.is === "fullname").value = Search.normalize("Michal Herda");
             persons.push(record);
