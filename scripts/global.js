@@ -93,6 +93,12 @@ const preferencesSchema = (function () {
         "portal.visibility":
         show_hide,
 
+        "/accounts/cv.visibility":
+        show_hide_if_accounts,
+
+        "/accounts/cv/linkedin.visibility":
+        show_hide_if_category("/accounts/cv.visibility"),
+
         "blocklist.status":
         {
             possibleValues: ["enabled", "disabled"],
@@ -166,7 +172,8 @@ const socialKindToVisibilityPreferencesKey = {
     twitter: "/accounts/microblogging/twitter.visibility",
     mastodon: "/accounts/microblogging/mastodon.visibility",
     patreon: "/accounts/funding/patreon.visibility",
-    keybase: "/accounts/keybase.visibility"
+    keybase: "/accounts/keybase.visibility",
+    linkedin: "/accounts/cv/linkedin.visibility"
 };
 
 

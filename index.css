@@ -140,6 +140,12 @@
     background-image: url("https://workshop.hexstream.xyz/svg/remakes/patreon.svg");
 }
 
+.cards .card .tags .tag.social[data-social-kind="linkedin"] .h {
+    background-image: url("https://workshop.hexstream.xyz/svg/remakes/linkedin.svg");
+    width: 1.1em;
+    margin-right: 0.2em;
+}
+
 .cards .card .tags .tag.social[data-social-kind="youtube"] .h {
     background-image: url("https://non-free.hexstream.xyz/global.hexstreamsoft.com/images/logos/youtube.svg");
 }
