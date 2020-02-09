@@ -14,7 +14,7 @@ function maybeDecorateSelection () {
 }
 
 function shuffle (array) {
-    const max = array.length - 1;
+    const max = array.length;
     for (let i = 0; i < max; i++) {
         const j = Math.floor(Math.random() * i);
         const temp = array[i];
