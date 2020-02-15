@@ -3,10 +3,6 @@
     border-bottom: none;
 }
 
-#meta-nav .linkedin:before {
-    background-image: url("https://workshop.hexstream.xyz/svg/remakes/linkedin.svg");
-}
-
 
 #search-wrapper {
     display: flex;
