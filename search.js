@@ -40,8 +40,9 @@ class Search {
                     is: socialKind
                 });
             });
-            add("highlight", ".highlights .v > a", "highlights.visibility");
-            add("highlight", ".highlights .v > span", "highlights.visibility");
+            add("highlights", ".highlights .v > a", "highlights.visibility");
+            add("highlights", ".highlights .v > span", "highlights.visibility");
+            add("funding", ".funding .v > a", "funding.visibility");
             add("portal", ".portal", "portal.visibility", true);
             const id = person.id;
             const record = {

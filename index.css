@@ -98,14 +98,16 @@
 }
 
 .cards .card .tags .tag.social,
-.cards .card .tags .tag.highlights {
+.cards .card .tags .tag.highlights,
+.cards .card .tags .tag.funding {
     display: flex;
     flex-flow: row;
     align-items: flex-start;
 }
 
 .cards .card .tags .tag.social .h,
-.cards .card .tags .tag.highlights .h {
+.cards .card .tags .tag.highlights .h,
+.cards .card .tags .tag.funding .h {
     flex: none;
     width: 1em;
     margin-right: 0.15em;
@@ -158,6 +160,11 @@
     background-image: url("https://non-free.hexstream.xyz/global.hexstreamsoft.com/images/lightning-bolt_shaded.svg");
     margin-left: -0.1em;
     margin-right: 0;
+}
+
+.cards .card .tags .tag.funding .h {
+    background-image: url("https://non-free.hexstream.xyz/global.hexstreamsoft.com/images/heart.svg");
+
 }
 
 .cards .card .tags .tag.social[data-social-kind="keybase"] .h {
@@ -293,4 +300,9 @@
 
 .long {
     white-space: initial !important;
+}
+
+.cards .card .x2 {
+    font-weight: bold;
+    color: green;
 }

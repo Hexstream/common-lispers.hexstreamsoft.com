@@ -78,16 +78,13 @@ const preferencesSchema = (function () {
         "/accounts/microblogging/mastodon.visibility":
         show_hide_if_category("/accounts/microblogging.visibility"),
 
-        "/accounts/funding.visibility":
-        show_hide_if_accounts,
-
-        "/accounts/funding/patreon.visibility":
-        show_hide_if_category("/accounts/funding.visibility"),
-
         "/accounts/keybase.visibility":
         show_hide_if_accounts,
 
         "highlights.visibility":
+        show_hide,
+
+        "funding.visibility":
         show_hide,
 
         "portal.visibility":
@@ -171,7 +168,6 @@ const socialKindToVisibilityPreferencesKey = {
     bitbucket: "/accounts/coding/bitbucket.visibility",
     twitter: "/accounts/microblogging/twitter.visibility",
     mastodon: "/accounts/microblogging/mastodon.visibility",
-    patreon: "/accounts/funding/patreon.visibility",
     keybase: "/accounts/keybase.visibility",
     linkedin: "/accounts/cv/linkedin.visibility"
 };

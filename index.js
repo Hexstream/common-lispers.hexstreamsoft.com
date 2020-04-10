@@ -29,7 +29,7 @@ window.addEventListener("DOMContentLoaded", function () {
     maybeDecorateSelection();
     window.addEventListener("hashchange", function (event) {
         maybeDecorateSelection();
-    })
+    });
     const commonLispers = document.querySelector("#common-lispers");
     commonLispers.addEventListener("change", function (event) {
         const select = event.target;

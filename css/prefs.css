@@ -9,10 +9,10 @@ html.\/accounts\/coding\/bitbucket\.visibility\=hide .cards .card .tag.social[da
 html.\/accounts\/microblogging\/twitter\.visibility\=hide .cards .card .tag.social[data-social-kind="twitter"],
 html.\/accounts\/microblogging\/mastodon\.visibility\=hide .cards .card .tag.social[data-social-kind="mastodon"],
 html.\/accounts\/videos\/youtube\.visibility\=hide .cards .card .tag.social[data-social-kind="youtube"],
-html.\/accounts\/funding\/patreon\.visibility\=hide .cards .card .tag.social[data-social-kind="patreon"],
 html.\/accounts\/cv\/linkedin\.visibility\=hide .cards .card .tag.social[data-social-kind="linkedin"],
 html.\/accounts\/keybase\.visibility\=hide .cards .card .tag.keybase,
 html.highlights\.visibility\=hide .cards .card .tag.highlights,
+html.funding\.visibility\=hide .cards .card .tag.funding,
 html.portal\.visibility\=hide .cards .card .tag.portal {
     display: none;
 }
