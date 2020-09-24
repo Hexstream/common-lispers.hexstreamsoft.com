@@ -33,8 +33,24 @@
         </div>
 
         <div id="search-wrapper">
-          <input type="search" id="search" placeholder="Search requires javascript" disabled="disabled"/>
+          <input type="search" id="search" placeholder="Search requires javascript" disabled="disabled" list="search-suggestions"/>
           <span class="summary">130 people</span>
+          <datalist id="search-suggestions">
+            <option>has:fullname</option>
+            <option>has:middlename</option>
+            <option>has:nickname</option>
+            <option>has:website</option>
+            <option>has:blog</option>
+            <option>has:github</option>
+            <option>has:gitlab</option>
+            <option>has:bitbucket</option>
+            <option>has:twitter</option>
+            <option>has:mastodon</option>
+            <option>has:funding</option>
+            <option>has:portal</option>
+            <option>has:keybase</option>
+            <option>has:linkedin</option>
+          </datalist>
         </div>
 
         <nav class="tabs">
@@ -53,7 +69,7 @@
 
       </div>
 
-      <p id="last-updated"><span>This page was last updated on </span><time datetime="2020-08-30">30 august 2020</time><span>.</span></p>
+      <p id="last-updated"><span>This page was last updated on </span><time datetime="2020-09-23">23 september 2020</time><span>.</span></p>
 
     </nav>
 
