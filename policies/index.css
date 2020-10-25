@@ -26,12 +26,7 @@
     text-align: center;
 }
 
-.cards.tenets {
-    align-items: flex-start;
-    margin-left: -1em;
-}
-
-.cards.tenets .card {
+.cards .card {
     margin-top: 1em;
 }
 

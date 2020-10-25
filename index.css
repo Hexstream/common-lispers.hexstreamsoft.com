@@ -43,9 +43,9 @@
 }
 
 .cards {
-    margin-top: -2em;
-    align-items: flex-start;
     justify-content: center;
+    margin-top: -2em;
+    margin-left: 0;
 }
 
 .cards .card {
