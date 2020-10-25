@@ -35,18 +35,6 @@
     margin-top: 1em;
 }
 
-.cards.tenets .card h1 a {
-    color: inherit;
-}
-
-.cards.tenets .card h1 a:hover,
-.cards.tenets .card h1 a:focus {
-    text-decoration: underline;
-}
-
-.cards.tenets .card:target h1 {
-    color: green;
-}
 
 a.tenet {
     color: green;

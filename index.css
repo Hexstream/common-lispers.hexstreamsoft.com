@@ -75,9 +75,8 @@
     text-decoration: none;
 }
 
-.cards .card .full-name a,
 .cards .card .nickname a {
-    color: black;
+    color: inherit;
 }
 
 .cards .card a:hover, .cards .card a:focus {
@@ -253,8 +252,6 @@
 }
 
 
-
-.cards :target .full-name a,
 .cards :target .nickname,
 .cards .nickname:target {
     color: green;
