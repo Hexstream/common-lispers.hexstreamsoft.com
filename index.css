@@ -188,21 +188,8 @@
 }
 
 .cards .card .tags.addenda {
-    position: absolute;
-    top: 100%;
-    margin-top: 0.2em;
     opacity: 0.5;
 }
-
-.cards .card .tags.addenda .tag {
-    font-size: smaller;
-}
-
-.cards .card .tags.addenda:hover,
-.cards .card .tags.addenda:focus {
-    opacity: 1;
-}
-
 
 .cards .card .options {
     display: none;
