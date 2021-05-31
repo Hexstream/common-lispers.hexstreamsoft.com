@@ -287,8 +287,3 @@
 .long {
     white-space: initial !important;
 }
-
-.cards .card .x2 {
-    font-weight: bold;
-    color: green;
-}
