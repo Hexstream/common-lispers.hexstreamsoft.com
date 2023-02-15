@@ -287,3 +287,38 @@
 .long {
     white-space: initial !important;
 }
+
+
+/* Preferences */
+
+html.fullname\.visibility\=hide .cards .card .full-name,
+html.nickname\.visibility\=hide .cards .card .nickname,
+html.website\.visibility\=hide .cards .card .website,
+html.blog\.visibility\=hide .cards .card .blog,
+html.accounts\.visibility\=hide .cards .card .tags .tag.social,
+html.\/accounts\/coding\/github\.visibility\=hide .cards .card .tag.social[data-social-kind="github"],
+html.\/accounts\/coding\/gitlab\.visibility\=hide .cards .card .tag.social[data-social-kind="gitlab"],
+html.\/accounts\/coding\/bitbucket\.visibility\=hide .cards .card .tag.social[data-social-kind="bitbucket"],
+html.\/accounts\/microblogging\/twitter\.visibility\=hide .cards .card .tag.social[data-social-kind="twitter"],
+html.\/accounts\/microblogging\/mastodon\.visibility\=hide .cards .card .tag.social[data-social-kind="mastodon"],
+html.\/accounts\/videos\/youtube\.visibility\=hide .cards .card .tag.social[data-social-kind="youtube"],
+html.\/accounts\/cv\/linkedin\.visibility\=hide .cards .card .tag.social[data-social-kind="linkedin"],
+html.\/accounts\/keybase\.visibility\=hide .cards .card .tag.keybase,
+html.highlights\.visibility\=hide .cards .card .tag.highlights,
+html.funding\.visibility\=hide .cards .card .tag.funding,
+html.portal\.visibility\=hide .cards .card .tag.portal {
+    display: none;
+}
+
+.cards .card .tags .tag.social[data-social-kind="reddit"] {
+    display: none;
+}
+
+html.\/accounts\/news\/reddit\.visibility\=show .cards .card .tags .tag.social[data-social-kind="reddit"] {
+    display: flex;
+}
+
+
+html.\/blocklist\/blocked\.visibility\=show .cards .card.blocked {
+    display: block;
+}
