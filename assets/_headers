@@ -1,0 +1,7 @@
+/*
+  ! Cache-Control
+  Cache-Control: public, max-age=86400, s-maxage=2592000
+
+/special/status.txt
+  ! Cache-Control
+  Cache-Control: no-store
