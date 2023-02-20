@@ -119,24 +119,24 @@
 }
 
 .cards .card .tags .tag.social[data-social-kind="twitter"] .h {
-    background-image: url("https://non-free.hexstream.dev/global.hexstream.dev/images/logos/twitter.svg");
+    background-image: url("https://global.hexstream.dev/non-free/images/logos/twitter.svg");
 }
 
 .cards .card .tags .tag.social[data-social-kind="mastodon"] .h {
-    background-image: url("https://non-free.hexstream.dev/global.hexstream.dev/images/logos/mastodon.svg");
+    background-image: url("https://global.hexstream.dev/non-free/images/logos/mastodon.svg");
     width: 0.8em;
 }
 
 .cards .card .tags .tag.social[data-social-kind="github"] .h {
-    background-image: url("https://non-free.hexstream.dev/global.hexstream.dev/images/logos/github.svg");
+    background-image: url("https://global.hexstream.dev/non-free/images/logos/github.svg");
 }
 
 .cards .card .tags .tag.social[data-social-kind="gitlab"] .h {
-    background-image: url("https://non-free.hexstream.dev/global.hexstream.dev/images/logos/gitlab.svg");
+    background-image: url("https://global.hexstream.dev/non-free/images/logos/gitlab.svg");
 }
 
 .cards .card .tags .tag.social[data-social-kind="bitbucket"] .h {
-    background-image: url("https://non-free.hexstream.dev/global.hexstream.dev/images/logos/bitbucket.svg");
+    background-image: url("https://global.hexstream.dev/non-free/images/logos/bitbucket.svg");
 }
 
 .cards .card .tags .tag.social[data-social-kind="patreon"] .h {
@@ -150,26 +150,26 @@
 }
 
 .cards .card .tags .tag.social[data-social-kind="youtube"] .h {
-    background-image: url("https://non-free.hexstream.dev/global.hexstream.dev/images/logos/youtube.svg");
+    background-image: url("https://global.hexstream.dev/non-free/images/logos/youtube.svg");
 }
 
 .cards .card .tags .tag.social[data-social-kind="reddit"] .h {
-    background-image: url("https://non-free.hexstream.dev/global.hexstream.dev/images/logos/reddit.svg");
+    background-image: url("https://global.hexstream.dev/non-free/images/logos/reddit.svg");
 }
 
 .cards .card .tags .tag.highlights .h {
-    background-image: url("https://non-free.hexstream.dev/global.hexstream.dev/images/lightning-bolt_shaded.svg");
+    background-image: url("https://global.hexstream.dev/non-free/images/lightning-bolt_shaded.svg");
     margin-left: -0.1em;
     margin-right: 0;
 }
 
 .cards .card .tags .tag.funding .h {
-    background-image: url("https://non-free.hexstream.dev/global.hexstream.dev/images/heart.svg");
+    background-image: url("https://global.hexstream.dev/non-free/images/heart.svg");
 
 }
 
 .cards .card .tags .tag.social[data-social-kind="keybase"] .h {
-    background-image: url("https://non-free.hexstream.dev/global.hexstream.dev/images/logos/keybase.svg");
+    background-image: url("https://global.hexstream.dev/non-free/images/logos/keybase.svg");
 }
 
 .cards .card .tags .tag.hv.highlights > .v {
