@@ -1,6 +1,6 @@
 /*
   ! Cache-Control
-  Cache-Control: public, max-age=86400, s-maxage=2592000
+  Cache-Control: public, max-age=86400
 
 /special/status.txt
   ! Cache-Control
