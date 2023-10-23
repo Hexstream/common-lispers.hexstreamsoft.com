@@ -9,11 +9,6 @@ main ul ul {
     align-items: center;
 }
 
-.labelled-control input.replaced + label {
-    width: 1em;
-    padding-right: 0.2em;
-}
-
 .controls-group.horizontal {
     display: flex;
     flex-flow: row;
