@@ -4,3 +4,5 @@
 public
 
 node_modules
+
+.wrangler
