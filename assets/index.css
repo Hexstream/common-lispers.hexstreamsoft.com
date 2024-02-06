@@ -81,7 +81,7 @@
     color: inherit;
 }
 
-.cards .card a:hover, .cards .card a:focus {
+.cards .card a:is(:hover, :focus) {
     text-decoration: underline;
 }
 
@@ -98,17 +98,13 @@
     opacity: 1;
 }
 
-.cards .card .tags .tag.social,
-.cards .card .tags .tag.highlights,
-.cards .card .tags .tag.funding {
+.cards .card .tags .tag:is(.social, .highlights, .funding) {
     display: flex;
     flex-flow: row;
     align-items: flex-start;
 }
 
-.cards .card .tags .tag.social .h,
-.cards .card .tags .tag.highlights .h,
-.cards .card .tags .tag.funding .h {
+.cards .card .tags .tag:is(.social, .highlights, .funding) .h {
     flex: none;
     width: 1em;
     margin-right: 0.15em;
@@ -176,8 +172,7 @@
     white-space: initial;
 }
 
-.cards .card .tags .tag.hv.highlights > .v > a,
-.cards .card .tags .tag.hv.highlights > .v > span {
+.cards .card .tags .tag.hv.highlights > .v > :is(a, span) {
     white-space: nowrap;
 }
 
