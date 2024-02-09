@@ -273,7 +273,7 @@
          display: none;
      }
 
-     .unless-miser[data-alt]:after {
+     .unless-miser[data-alt]::after {
          content: attr(data-alt);
      }
 }
