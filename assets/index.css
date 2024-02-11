@@ -34,12 +34,8 @@
     font-style: italic;
 }
 
-#no-affiliation-or-endorsement a {
+#no-affiliation-or-endorsement a:where(:not(:hover)) {
     text-decoration: none;
-}
-
-#no-affiliation-or-endorsement a:hover {
-    text-decoration: underline;
 }
 
 .cards {
@@ -69,20 +65,16 @@
 
 .cards .card .nickname {
     font-size: larger;
-    opacity: 1;
+    opacity: revert;
     scroll-margin-top: 0.15em;
 }
 
-.cards .card a {
+.cards .card a:where(:not(:is(:hover, :focus))) {
     text-decoration: none;
 }
 
 .cards .card .nickname a {
     color: inherit;
-}
-
-.cards .card a:is(:hover, :focus) {
-    text-decoration: underline;
 }
 
 .cards .card .tags {
@@ -95,7 +87,7 @@
 }
 
 .cards .card .tags .tag {
-    opacity: 1;
+    opacity: revert;
 }
 
 .cards .card .tags .tag:is(.social, .highlights, .funding) {
@@ -169,19 +161,15 @@
 }
 
 .cards .card .tags .tag.hv.highlights > .v {
-    white-space: initial;
+    white-space: revert;
 }
 
 .cards .card .tags .tag.hv.highlights > .v > :is(a, span) {
     white-space: nowrap;
 }
 
-.cards .card .tags .tag.secondary {
+.cards .card .tags .tag.secondary:where(:not(:hover)) {
     opacity: 0.5;
-}
-
-.cards .card .tags .tag.secondary:hover {
-    opacity: 1;
 }
 
 .cards .card .tags.addenda {
@@ -204,7 +192,7 @@
 }
 
 .cards .card .options:hover {
-    opacity: initial;
+    opacity: revert;
 }
 
 .cards .card .options > option:first-child {
@@ -255,7 +243,7 @@
 }
 
 .cards .card .highlights .matches a {
-    text-decoration: underline;
+    text-decoration: revert;
 }
 
 
@@ -280,7 +268,7 @@
 
 
 .long {
-    white-space: initial !important;
+    white-space: revert !important;
 }
 
 
