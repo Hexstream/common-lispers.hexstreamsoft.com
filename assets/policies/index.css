@@ -36,7 +36,7 @@ a.tenet {
 }
 
 #footnotes #footnote_deceased-persons mark {
-    background: revert;
+    background-color: initial;
     font-style: italic;
 }
 
