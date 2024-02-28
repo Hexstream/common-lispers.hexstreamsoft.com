@@ -161,7 +161,7 @@
 }
 
 .cards .card .tags .tag.hv.highlights > .v {
-    white-space: revert;
+    white-space: initial;
 }
 
 .cards .card .tags .tag.hv.highlights > .v > :is(a, span) {
@@ -268,7 +268,7 @@
 
 
 .long {
-    white-space: revert !important;
+    white-space: initial !important;
 }
 
 
