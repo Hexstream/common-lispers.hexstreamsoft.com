@@ -101,9 +101,6 @@
     width: 1em;
     margin-right: 0.15em;
     text-indent: -10000px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
 }
 
 .cards .card .tags .tag.social[data-social-kind="twitter"] .h {
