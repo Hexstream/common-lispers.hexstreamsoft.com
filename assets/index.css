@@ -1,9 +1,3 @@
-#top-nav > .main > .tabs ul > li {
-    border-top: none;
-    border-bottom: none;
-}
-
-
 #search-wrapper {
     display: flex;
     position: relative;

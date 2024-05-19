@@ -1,8 +1,3 @@
-main ul ul {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-
 .labelled-control {
     display: flex;
     flex-flow: row;
@@ -16,6 +11,16 @@ main ul ul {
 
 .controls-group.horizontal > * + * {
     margin-left: 0.4em;
+}
+
+
+#fields ul ul {
+    margin-left: 2em;
+}
+
+#fields ul > li {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 

@@ -40,6 +40,8 @@ a.tenet {
     font-style: italic;
 }
 
-#structure-of-an-entry > ol > li + li {
-    margin-top: 0;
+
+#structure-of-an-entry > .list > li {
+    margin-top: 2m;
+    margin-bottom: 2em;
 }
