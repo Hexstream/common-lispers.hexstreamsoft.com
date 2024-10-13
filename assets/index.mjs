@@ -1,8 +1,4 @@
 import {
-    nodeOrAncestorSatisfying
-} from "https://global.hexstream.dev/scripts/dom.mjs";
-
-import {
     preferences
 } from "./scripts/prefs.mjs";
 
@@ -69,7 +65,7 @@ commonLispers.addEventListener("change", function (event) {
     const action = select.value;
     select.value = "";
     if (action === "block" || action === "unblock")
-        blocklistActionToFunction[action](nodeOrAncestorSatisfying(select, node => node.matches(".card")).id);
+        blocklistActionToFunction[action](select.closest(".card").id);
 });
 if (preferences["blocklist.status"] === "enabled")
     blocklist.forEach(function (blocked) {
