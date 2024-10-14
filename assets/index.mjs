@@ -18,9 +18,11 @@ function maybeDecorateSelection () {
     if (!hash)
         return;
     var target = document.querySelector(escapePersonID(decodeURIComponent(hash)));
-    if (target && target.matches(".cards .card .nickname"))
+    if (!target)
+        return;
+    if (target.matches(".cards .card .nickname"))
         target = target.parentElement;
-    if (target && target.matches(".cards .card") && !target.querySelector(".options"))
+    if (target.matches(".cards .card") && !target.querySelector(".options"))
         target.appendChild(document.querySelector("#options-template").content.cloneNode(true));
 }
 

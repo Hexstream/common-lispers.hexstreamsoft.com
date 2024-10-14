@@ -83,7 +83,7 @@ function applySearch (searchString) {
     searchString = searchString.replace("ł", "l");
     console.time(searchTimerName);
     const cached = cache[searchString];
-    currentResults = cached || computeSearchResults(searchString);
+    currentResults = cached ?? computeSearchResults(searchString);
     if (cached)
         console.log("(from cache)");
     else
@@ -93,8 +93,7 @@ function applySearch (searchString) {
     console.time(populateTimerName);
     const resultsParent = document.querySelector("#common-lispers");
     resultsParent.textContent = "";
-    if (previousResults)
-        previousResults.unapplyResults();
+    previousResults?.unapplyResults();
     currentResults.applyResults();
     const resultsFragment = document.createDocumentFragment();
     currentResults.results.forEach(function (result) {
