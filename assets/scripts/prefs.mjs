@@ -12,35 +12,19 @@ export {
     preferences
 }
 
-
-const show_hide = {
-    possibleValues: ["show", "hide"],
-    defaultValue: "show"
-};
-
 const show_hide_if_accounts = {
-    possibleValues: ["show", "hide"],
-    defaultValue: "show",
-    computeRelevance: function (preferences) {
-        return preferences["accounts.visibility"] === "show";
-    }
-};
-
-const show_hide_if_accounts_default_hide = {
-    possibleValues: ["show", "hide"],
-    defaultValue: "hide",
-    computeRelevance: function (preferences) {
-        return preferences["accounts.visibility"] === "show";
+    base: true,
+    relevantIf: {
+        "accounts.visibility": "show"
     }
 };
 
 function show_hide_if_category (category) {
     return {
-        possibleValues: ["show", "hide"],
-        defaultValue: "show",
-        computeRelevance: function (preferences) {
-            return preferences["accounts.visibility"] === "show"
-                && preferences[category] === "show";
+        base: true,
+        relevantIf: {
+            "accounts.visibility": "show",
+            [category]: "show"
         }
     };
 }
@@ -49,27 +33,26 @@ const preferencesSchema = new StateDomainSchema(
     {
         "sort-order":
         {
-            possibleValues: ["random", "alphabetical"],
-            defaultValue: "random"
+            possibleValues: ["random", "alphabetical"]
         },
 
         "fullname.visibility":
-        show_hide,
+        true,
 
         "middlename.visibility":
-        show_hide,
+        true,
 
         "nickname.visibility":
-        show_hide,
+        true,
 
         "website.visibility":
-        show_hide,
+        true,
 
         "blog.visibility":
-        show_hide,
+        true,
 
         "accounts.visibility":
-        show_hide,
+        true,
 
         "/accounts/coding.visibility":
         show_hide_if_accounts,
@@ -96,13 +79,13 @@ const preferencesSchema = new StateDomainSchema(
         show_hide_if_accounts,
 
         "highlights.visibility":
-        show_hide,
+        true,
 
         "funding.visibility":
-        show_hide,
+        true,
 
         "portal.visibility":
-        show_hide,
+        true,
 
         "/accounts/cv.visibility":
         show_hide_if_accounts,
@@ -112,16 +95,14 @@ const preferencesSchema = new StateDomainSchema(
 
         "blocklist.status":
         {
-            possibleValues: ["enabled", "disabled"],
-            defaultValue: "enabled"
+            possibleValues: ["enabled", "disabled"]
         },
 
         "/blocklist/blocked.visibility":
         {
-            possibleValues: ["show", "hide"],
-            defaultValue: "hide",
-            computeRelevance: function (preferences) {
-                return preferences["blocklist.status"] === "enabled";
+            base: false,
+            relevantIf: {
+                "blocklist.status": "enabled"
             }
         }
     });
