@@ -76,7 +76,7 @@
     margin-top: 0;
 }
 
-.cards .card .tags.contains-groups {
+.cards .card .tags:has(.group) {
     flex-flow: row wrap;
 }
 
