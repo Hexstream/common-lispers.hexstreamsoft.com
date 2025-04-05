@@ -67,10 +67,6 @@
     text-decoration: none;
 }
 
-.cards .card .nickname a {
-    color: inherit;
-}
-
 .cards .card .tags {
     justify-content: flex-start;
     margin-top: 0;
@@ -218,10 +214,6 @@
 .cards :target .nickname,
 .cards .nickname:target {
     color: green;
-}
-
-.cards .card .nickname a {
-    color: inherit;
 }
 
 
