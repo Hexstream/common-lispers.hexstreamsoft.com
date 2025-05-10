@@ -1,6 +1,6 @@
 https://common-lispers.hexstreamsoft.com/*
   ! Cache-Control
-  Cache-Control: public, max-age=86400
+  Cache-Control: max-age=86400
 
 /special/status.txt
   ! Cache-Control
